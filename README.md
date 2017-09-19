@@ -1,9 +1,29 @@
 # react-via-cep
 simple integration for https://viacep.com.br
 
+## Install
+Install with npm:
+```
+npm i --save react-via-cep
+```
+Install with yarn:
+```
+yarn add react-via-cep
+```
 ## Documentation
 
+Component API.
+
+| Name | Type    | default | Description                                                    |
+|------|---------|---------|----------------------------------------------------------------|
+| cep  | String  |         | Cep format 00000-000 or 00000000                               |
+| lazy | Boolean | false   | wait for the fetch functions to be triggered to load the data. |
+
+Simple example.
+
 ```jsx
+import ViaCep from 'react-via-cep';
+
 <ViaCep cep={this.state.cep} lazy>
   { ({ data, loading, error, fetch }) => {
     if (loading) {
@@ -28,3 +48,5 @@ simple integration for https://viacep.com.br
   }}
 </ViaCep>
 ```
+## License
+MIT &copy; [Arthur Ribeiro](https://github.com/devarthurribeiro)
