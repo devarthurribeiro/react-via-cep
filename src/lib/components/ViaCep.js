@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 
-class ViaCep extends Component {
+class ViaCep extends React.Component {
+  static propTypes = {
+    cep: PropTypes.string.isRequired,
+    lazy: PropTypes.bool,
+  }
   constructor(props) {
     super(props);
     this.state = {
