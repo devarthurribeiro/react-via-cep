@@ -1,25 +1,33 @@
-# react-via-cep
-simple integration for https://viacep.com.br
+react-via-cep
+=======
 
-## Install
-Install with npm:
+[![npm version](https://badge.fury.io/js/react-via-cep.svg)](https://badge.fury.io/js/react-via-cep)
+[![License](https://img.shields.io/npm/l/react-via-cep.svg)](https://www.npmjs.com/package/react-via-cep)
+
+
+integração simples para https://viacep.com.br
+
+![](/public/demo.gif?raw=true)
+
+## Instalação
+Instalar via npm:
 ```
 npm i --save react-via-cep
 ```
-Install with yarn:
+Instalar via yarn:
 ```
 yarn add react-via-cep
 ```
-## Documentation
+## Docs
 
 Component API.
 
-| Name | Type    | default | Description                                                    |
+| Nome | Tipo    | Padrão  | Descriçãos                                                     |
 |------|---------|---------|----------------------------------------------------------------|
-| cep  | String  |         | Cep format 00000-000 or 00000000                               |
-| lazy | Boolean | false   | wait for the fetch functions to be triggered to load the data. |
+| cep  | String  |         | Formato do cep 00000-000 ou 00000000                           |
+| lazy | Boolean | false   | Aguardar a função fetch ser disparada para carregar os dados. Nesse caso o cep deve ser válido |
 
-Simple example.
+## Exemplo de uso simples.
 
 ```jsx
 import ViaCep from 'react-via-cep';
@@ -47,6 +55,21 @@ import ViaCep from 'react-via-cep';
     </div>
   }}
 </ViaCep>
+```
+## Dados retornados
+
+```
+{
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "complemento": "lado ímpar",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP",
+  "unidade": "",
+  "ibge": "3550308",
+  "gia": "1004"
+}
 ```
 ## License
 MIT &copy; [Arthur Ribeiro](https://github.com/devarthurribeiro)
