@@ -5,6 +5,7 @@ class ViaCep extends React.Component {
   static propTypes = {
     cep: PropTypes.string.isRequired,
     lazy: PropTypes.bool,
+    onSuccess: PropTypes.func,
   }
   constructor(props) {
     super(props);
@@ -27,6 +28,7 @@ class ViaCep extends React.Component {
     .then(response => response.json() )
     .then( data => {
       this.setState({ data: data, loading: false });
+      this.props.onSuccess(data);
     })
     .catch(err => {
       this.setState({ error: true, loading: false });

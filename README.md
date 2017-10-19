@@ -22,10 +22,11 @@ yarn add react-via-cep
 
 Component API.
 
-| Nome | Tipo    | Padrão  | Descriçãos                                                     |
-|------|---------|---------|----------------------------------------------------------------|
-| cep  | String  |         | Formato do cep 00000-000 ou 00000000                           |
-| lazy | Boolean | false   | Aguardar a função fetch ser disparada para carregar os dados. Nesse caso o cep deve ser válido |
+| Nome | Tipo    | Padrão  | Descriçãos                                                                                                  |
+|------------|-----------|---------|-----------------------------------------------------------------------------------------------------|
+| cep        | String    |         | Formato do cep 00000-000 ou 00000000                                                                |
+| onSuccess  | function  |         | Função executada caso o cep seja encontrado que recebe como paramento um objeto com os dados do cep |
+| lazy       | Boolean   | false   | Aguardar a função fetch ser disparada para carregar os dados. Nesse caso o cep deve ser válido      |
 
 ## Exemplo de uso simples.
 

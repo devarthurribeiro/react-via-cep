@@ -9,10 +9,13 @@ class App extends React.Component {
   handleChangeCep = (evt) => {
     this.setState({ cep: evt.target.value })
   }
+  handleSuccess = (cepData) => {
+    console.log(cepData);
+  }
   render() {
     return (
       <div className="App">
-        <ViaCep cep={this.state.cep} lazy>
+        <ViaCep cep={this.state.cep} onSuccess={this.handleSuccess} lazy>
           { ({ data, loading, error, fetch }) => {
             if (loading) {
               return <p>loading...</p>
