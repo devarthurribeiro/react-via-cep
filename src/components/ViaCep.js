@@ -2,11 +2,6 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 class ViaCep extends React.Component {
-  static propTypes = {
-    cep: PropTypes.string.isRequired,
-    lazy: PropTypes.bool,
-    onSuccess: PropTypes.func,
-  }
   constructor(props) {
     super(props);
     this.state = {
@@ -44,6 +39,12 @@ class ViaCep extends React.Component {
       }) || null
     )
   }
+}
+
+ViaCep.PropTypes = {
+  cep: PropTypes.string.isRequired,
+  lazy: PropTypes.bool,
+  onSuccess: PropTypes.func,
 }
 
 export default ViaCep;
