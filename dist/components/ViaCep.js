@@ -56,7 +56,7 @@ var ViaCep = function (_React$Component) {
       fetch("https://viacep.com.br/ws/" + this.props.cep + "/json/").then(function (response) {
         return response.json();
       }).then(function (data) {
-        _this2.setState({ data: data, loading: false });
+        _this2.setState({ data: data, loading: false, error: false });
         _this2.props.onSuccess(data);
       }).catch(function (err) {
         _this2.setState({ error: true, loading: false });
@@ -76,5 +76,11 @@ var ViaCep = function (_React$Component) {
 
   return ViaCep;
 }(_react2.default.Component);
+
+ViaCep.PropTypes = {
+  cep: _propTypes2.default.string.isRequired,
+  lazy: _propTypes2.default.bool,
+  onSuccess: _propTypes2.default.func
+};
 
 exports.default = ViaCep;

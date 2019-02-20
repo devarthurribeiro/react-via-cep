@@ -22,7 +22,7 @@ class ViaCep extends React.Component {
     fetch(`https://viacep.com.br/ws/${this.props.cep}/json/`)
     .then(response => response.json() )
     .then( data => {
-      this.setState({ data: data, loading: false });
+      this.setState({ data: data, loading: false, error:false });
       this.props.onSuccess(data);
     })
     .catch(err => {
