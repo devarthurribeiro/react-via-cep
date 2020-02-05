@@ -7,7 +7,11 @@ react-via-cep
 
 integração simples para https://viacep.com.br
 
-![](/public/demo.gif?raw=true)
+<p align="center">
+	<br>
+	<img src="./demo.gif" width="380">
+	<br>
+</p>
 
 ## Instalação
 Instalar via npm:
