@@ -2,6 +2,7 @@ react-via-cep
 =======
 
 [![npm version](https://badge.fury.io/js/react-via-cep.svg)](https://badge.fury.io/js/react-via-cep)
+[![CircleCI](https://circleci.com/gh/devarthurribeiro/react-via-cep.svg?style=svg)](https://circleci.com/gh/devarthurribeiro/react-via-cep)
 [![License](https://img.shields.io/npm/l/react-via-cep.svg)](https://www.npmjs.com/package/react-via-cep)
 
 
