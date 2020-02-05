@@ -1,6 +1,6 @@
 {
   "name": "react-via-cep",
-  "version": "2.0.5",
+  "version": "2.0.7",
   "description": "simple integration for https://viacep.com.br",
   "main": "dist/index.js",
   "scripts": {

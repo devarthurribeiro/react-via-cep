@@ -9,7 +9,7 @@ integração simples para https://viacep.com.br
 
 <p align="center">
 	<br>
-	<img src="./public/demo.gif" width="380">
+	<img src="https://github.com/devarthurribeiro/react-via-cep/raw/master/demo.gif" width="380">
 	<br>
 </p>
 
