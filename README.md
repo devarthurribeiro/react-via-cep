@@ -9,7 +9,7 @@ integração simples para https://viacep.com.br
 
 <p align="center">
 	<br>
-	<img src="./demo.gif" width="380">
+	<img src="./public/demo.gif" width="380">
 	<br>
 </p>
 
